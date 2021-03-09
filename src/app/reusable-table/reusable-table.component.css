@@ -1,0 +1,55 @@
+.tbl-container{
+    overflow-x: scroll;
+    width: 100%;
+    border-radius: 15px;
+}
+.table-striped{
+    background: #fff;
+    width: 100%;
+}
+.titles{
+    font-size: 16px;
+    padding: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #eee;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.row{
+    height: 25px;
+    max-height: 25px;
+}
+tr:nth-child(even){
+    background: #f5f5f5;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(odd){
+    background: #ffffff;
+}
+tr td{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+.profile{
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #999999;
+}
+.no-outline{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.no-outline:hover{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.no-outline:active{
+    background: transparent;
+    border: none;
+    outline: none;
+}

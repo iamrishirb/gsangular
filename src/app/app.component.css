@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper{
+    width: 90%;
+    margin: 5% auto;
+    overflow-y: hidden;
+}

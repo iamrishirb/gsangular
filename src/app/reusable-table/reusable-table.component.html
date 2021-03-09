@@ -1,0 +1,54 @@
+<div class="tbl-container">
+    <table class="table-striped">
+        <thead>
+            <tr>
+                <th class="titles">
+                   Sr. No.
+                </th>
+                <th class="titles">
+                   Profile
+                </th>
+                <th class="titles">
+                    First Name
+                </th>
+                <th class="titles">
+                    Last Name
+                </th>
+                <th class="titles">
+                    Email
+                </th>
+                <th class="titles">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody class="body">
+            <tr *ngFor="let record of TableRecords.data" class="row">
+                <td> {{ record.id }} </td>
+                <td><img src="{{ record.avatar }}" class="profile" alt=""></td>
+                <td> {{ record.first_name }} </td>
+                <td> {{ record.last_name }} </td>
+                <td> {{ record.email }} </td>
+                <td>
+                    <button class="no-outline" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu class="options" #menu="matMenu">
+                        <button mat-menu-item class="option">
+                            <mat-icon>account_circle</mat-icon>
+                            <span>Show Profile</span>
+                        </button>
+                        <button mat-menu-item class="option">
+                            <mat-icon>edit</mat-icon>
+                            <span>Edit Details</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <mat-icon>send</mat-icon>
+                            <span>Send Email</span>
+                        </button>
+                    </mat-menu>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
